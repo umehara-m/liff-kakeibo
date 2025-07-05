@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>家計簿ミニアプリ</title>
+</head>
+<body>
+  <h2>支出入力フォーム</h2>
+  <form id="expenseForm">
+    <label>支払者：</label><input type="text" name="payer" required><br>
+    <label>金額：</label><input type="number" name="amount" required><br>
+    <label>カテゴリ：</label>
+    <select name="category">
+      <option value="食費">食費</option>
+      <option value="日用品">日用品</option>
+      <option value="交通費">交通費</option>
+    </select><br>
+    <label>内容：</label><input type="text" name="description" required><br>
+    <button type="submit">送信</button>
+  </form>
+</body>
+</html>
