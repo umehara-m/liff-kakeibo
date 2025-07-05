@@ -57,7 +57,7 @@
           liff.closeWindow(); // LINEミニアプリを閉じる
         } catch (error) {
           console.error(error);
-          document.getElementById('status').innerText = "❌ 送信エラーです";
+          document.getElementById('status').innerText = "❌ 送信エラー: " + error.message;
         }
       });
     });
